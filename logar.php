@@ -3,10 +3,10 @@ session_start();
 
 if(isset($_POST['email']) && !empty($_POST['email']) &&
    isset($_POST['senha']) && !empty($_POST['senha'])){
-    
+  
     require __DIR__ . '/index2.php'; 
     require __DIR__ . '/Usuario.class.php';
-   
+
     $u = new Usuario();
 
     $email = $_POST['email'];
@@ -28,6 +28,5 @@ if(isset($_POST['email']) && !empty($_POST['email']) &&
     header("Location: login.html");
     exit;
 }
-
 
 ?>
