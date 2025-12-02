@@ -16,7 +16,7 @@ if(isset($_POST['email']) && !empty($_POST['email']) &&
       
         $_SESSION['usuario_logado'] = $email;
 
-     header("Location: home.html"); 
+     header("Location: index.html"); 
       exit;
 
     } else {
@@ -30,3 +30,4 @@ if(isset($_POST['email']) && !empty($_POST['email']) &&
 }
 
 ?>
+
